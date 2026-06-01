@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useRef } from "react";
+import "./global.css";
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Animated, Easing } from "react-native";
+import DotBounce from "./components/dotBounce";
+
 
 export default function App() {
+
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className="flex-1 items-center p-5">
+
+
+      <DotBounce color={["#c026d3","green","orange"]}  duration={1800}  size={32} gap={40} /> 
+
+{/* // reused animation create */}
+
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
