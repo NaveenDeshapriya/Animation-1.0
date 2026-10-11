@@ -14,7 +14,7 @@ export default function App() {
 
       <DotBounce color={["#c026d3","green","orange"]}  duration={1800}  size={32} gap={40} /> 
 
-{/* // reused animation create */}
+        {/* // reused animation create */}
 
     </SafeAreaView>
   );

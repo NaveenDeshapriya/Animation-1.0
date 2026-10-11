@@ -11,7 +11,7 @@ To deploy this project run
 ```bash
   npx expo start
 ```
-
+ 
 
 ## Demo
 
